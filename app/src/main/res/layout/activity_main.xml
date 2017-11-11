@@ -341,6 +341,6 @@
             android:layout_gravity="center_horizontal"
             android:background="@color/colorPrimary"
             android:textColor="@android:color/white"
-            android:onClick="checkAnswers"/>
+            android:onClick="submitAnswers"/>
     </LinearLayout>
 </ScrollView>
