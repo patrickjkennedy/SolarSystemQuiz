@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void submitAnswers(View view){
+    public void submitAnswers(View view) {
         int correctAnswers = 0;
 
         // Grab each of the correct answers
@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
         CheckBox questionThreeTwo = (CheckBox) findViewById(R.id.question_three_answer_two);
         boolean questionThreeTwoCorrect = questionThreeTwo.isChecked();
 
+        CheckBox questionThreeIncorrectAnswer = (CheckBox) findViewById(R.id.question_three_incorrect_answer);
+
         RadioButton questionFour = (RadioButton) findViewById(R.id.question_four_answer);
         boolean questionFourCorrect = questionFour.isChecked();
 
@@ -46,74 +48,57 @@ public class MainActivity extends AppCompatActivity {
         boolean questionSixCorrect = questionSix.isChecked();
 
         EditText questionSeven = (EditText) findViewById(R.id.question_seven_answer);
-        String questionSevenCorrect = questionSeven.getText().toString();
+        String questionSevenCorrect = questionSeven.getText().toString().trim();
 
         RadioButton questionEight = (RadioButton) findViewById(R.id.question_eight_answer);
         boolean questionEightCorrect = questionEight.isChecked();
 
         // Set up if statements
 
-        if (questionOneCorrect){
+        if (questionOneCorrect) {
             correctAnswers += 1;
         }
 
-        if (questionTwoCorrect){
+        if (questionTwoCorrect) {
             correctAnswers += 1;
         }
 
-        if (questionThreeOneCorrect && questionThreeTwoCorrect){
+        if (questionThreeOneCorrect && questionThreeTwoCorrect && !questionThreeIncorrectAnswer.isChecked()) {
             correctAnswers += 1;
         }
 
-        if (questionFourCorrect){
+        if (questionFourCorrect) {
             correctAnswers += 1;
         }
 
-        if (questionFiveCorrect){
+        if (questionFiveCorrect) {
             correctAnswers += 1;
         }
 
-        if (questionSixCorrect){
+        if (questionSixCorrect) {
             correctAnswers += 1;
         }
 
-        if(questionSevenCorrect.equals("Laika") || questionSevenCorrect.equals("laika") ||
-                questionSevenCorrect.equals("LAIKA") ){
+        if (questionSevenCorrect.equalsIgnoreCase("Laika")) {
             correctAnswers += 1;
         }
 
-        if (questionEightCorrect){
+        if (questionEightCorrect) {
             correctAnswers += 1;
         }
 
         displayMessage(correctAnswers);
     }
 
-    public void displayMessage(int answers){
+    public void displayMessage(int answers) {
         Context context = getApplicationContext();
 
-        if(answers == 1){
-            CharSequence text = "You got " + answers + " question correct. Study up and try again!";
-            int duration = Toast.LENGTH_LONG;
-            Toast toast = Toast.makeText(context, text, duration);
-            toast.show();
-        }
-
-        if(answers <= 3){
+        if (answers <= 4) {
             CharSequence text = "You got " + answers + " questions correct. Study up and try again!";
             int duration = Toast.LENGTH_LONG;
             Toast toast = Toast.makeText(context, text, duration);
             toast.show();
-        }
-
-        if(answers >= 4 && answers <= 6){
-            CharSequence text = "You got " + answers + " questions correct. Good job!";
-            int duration = Toast.LENGTH_LONG;
-            Toast toast = Toast.makeText(context, text, duration);
-            toast.show();
-        }
-
-        if(answers > 7){
+        } else {
             CharSequence text = "You got " + answers + " questions correct. You're out of this world!";
             int duration = Toast.LENGTH_LONG;
             Toast toast = Toast.makeText(context, text, duration);
