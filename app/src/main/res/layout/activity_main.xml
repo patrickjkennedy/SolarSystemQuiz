@@ -38,7 +38,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="What is the distance from the Earth to the Sun?" />
+                android:text="@string/question_one" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -48,18 +48,18 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="80.2 million kilometres" />
+                    android:text="@string/question_one_answer_one" />
 
                 <RadioButton
                     android:id="@+id/question_one_answer"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="149.6 million kilometres" />
+                    android:text="@string/question_one_answer_two" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="222.9 million kilometres" />
+                    android:text="@string/question_one_answer_three" />
 
 
             </RadioGroup>
@@ -78,7 +78,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="How many moons does Jupiter have?" />
+                android:text="@string/question_two" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -88,18 +88,18 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="14" />
+                    android:text="@string/question_two_answer_one" />
 
                 <RadioButton
                     android:id="@+id/question_two_answer"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="69" />
+                    android:text="@string/question_two_answer_two" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="32" />
+                    android:text="@string/question_two_answer_three" />
 
             </RadioGroup>
 
@@ -118,7 +118,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Which of these planets are gas giants? Choose two." />
+                android:text="@string/question_three" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -130,18 +130,18 @@
                     android:id="@+id/question_three_answer_one"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Neptune" />
+                    android:text="@string/question_three_answer_one" />
 
                 <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Mercury" />
+                    android:text="@string/question_three_answer_two" />
 
                 <CheckBox
                     android:id="@+id/question_three_answer_two"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Saturn" />
+                    android:text="@string/question_three_answer_three" />
             </LinearLayout>
         </LinearLayout>
 
@@ -158,7 +158,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="How many people have walked on the moon?" />
+                android:text="@string/question_four" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -169,17 +169,17 @@
                     android:id="@+id/question_four_answer"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="12" />
+                    android:text="@string/question_four_answer_one" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="8" />
+                    android:text="@string/question_four_answer_two" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="7" />
+                    android:text="@string/question_four_answer_three" />
             </RadioGroup>
         </LinearLayout>
 
@@ -196,7 +196,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Who was the first woman in space?" />
+                android:text="@string/question_five" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -207,17 +207,17 @@
                     android:id="@+id/question_five_answer"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Valentina Tershkova" />
+                    android:text="@string/question_five_answer_one" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Margaret Hamilton" />
+                    android:text="@string/question_five_answer_two" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sally Ride" />
+                    android:text="@string/question_five_answer_three" />
             </RadioGroup>
         </LinearLayout>
 
@@ -234,7 +234,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="What colour is the sunset on Mars?" />
+                android:text="@string/question_six" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -244,18 +244,18 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Red" />
+                    android:text="@string/question_six_answer_one" />
 
                 <RadioButton
                     android:id="@+id/question_six_answer"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Blue" />
+                    android:text="@string/question_six_answer_two" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Green" />
+                    android:text="@string/question_six_answer_three" />
             </RadioGroup>
         </LinearLayout>
 
@@ -272,7 +272,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="What was the name of the first dog in space?" />
+                android:text="@string/question_seven" />
 
             <EditText
                 android:id="@+id/question_seven_answer"
@@ -294,7 +294,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="How old is the Earth?" />
+                android:text="@string/question_eight" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -305,24 +305,24 @@
                     android:id="@+id/question_eight_answer"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="4.5 billion years old" />
+                    android:text="@string/question_eight_answer_one" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="6000 years old" />
+                    android:text="@string/question_eight_answer_two" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="10.7 million years old" />
+                    android:text="@string/question_eight_answer_three" />
             </RadioGroup>
         </LinearLayout>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Submit Answers"
+            android:text="@string/submit"
             android:layout_gravity="center_horizontal"
             android:background="@color/colorPrimary"
             android:textColor="@android:color/white"

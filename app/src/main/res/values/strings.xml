@@ -1,4 +1,34 @@
 <resources>
     <string name="app_name">Solar System Quiz</string>
     <string name="introText">3,2,1...BLAST OFF! Test your knowledge of our solar system with our fun quiz! Compete with your friends and family to claim the title of \'Smartest in the Cosmos!</string>
+    <string name="question_one">What is the distance from the Earth to the Sun?</string>
+    <string name="question_one_answer_one">80.2 million kilometres</string>
+    <string name="question_one_answer_two">149.6 million kilometres</string>
+    <string name="question_one_answer_three">222.9 million kilometres</string>
+    <string name="question_two">How many moons does Jupiter have?</string>
+    <string name="question_two_answer_one">14</string>
+    <string name="question_two_answer_two">69</string>
+    <string name="question_two_answer_three">32</string>
+    <string name="question_three">Which of these planets are gas giants? Choose two.</string>
+    <string name="question_three_answer_one">Neptune</string>
+    <string name="question_three_answer_two">Mercury</string>
+    <string name="question_three_answer_three">Saturn</string>
+    <string name="question_four">How many people have walked on the moon?</string>
+    <string name="question_four_answer_one">12</string>
+    <string name="question_four_answer_two">8</string>
+    <string name="question_four_answer_three">7</string>
+    <string name="question_five">Who was the first woman in space?</string>
+    <string name="question_five_answer_one">Valentina Tershkova</string>
+    <string name="question_five_answer_two">Margaret Hamilton</string>
+    <string name="question_five_answer_three">Sally Ride</string>
+    <string name="question_six">What colour is the sunset on Mars?</string>
+    <string name="question_six_answer_one">Red</string>
+    <string name="question_six_answer_two">Blue</string>
+    <string name="question_six_answer_three">Green</string>
+    <string name="question_seven">What was the name of the first dog in space?</string>
+    <string name="question_eight">How old is the Earth?</string>
+    <string name="question_eight_answer_one">4.5 billion years old</string>
+    <string name="question_eight_answer_two">6000 years old</string>
+    <string name="question_eight_answer_three">10.7 million years old</string>
+    <string name="submit">Submit Answers</string>
 </resources>
